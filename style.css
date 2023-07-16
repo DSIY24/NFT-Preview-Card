@@ -1,0 +1,127 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+:root {
+    font-size: 16px;
+    --clr-Soft-Blue: hsl(215, 51%, 70%);
+    --clr-Cyan: hsl(178, 100%, 50%);
+
+    --clr-Very-dark-blue: hsl(217, 54%, 11%);
+    --clr-dark-blue: hsl(216, 50%, 16%);
+    --white: hsl(0, 0%, 100%);
+}
+body {
+    background-color: var(--clr-Very-dark-blue);
+    display:grid;
+    min-height: 100vh;
+    place-content: center;
+    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+}
+section {
+    background-color: var(--clr-dark-blue);
+    border-radius: 1rem;
+    min-width: 350px;
+    max-width: 450px;
+    padding: 1.5rem;
+    box-shadow: 1px 1px 100px 1px black;
+}
+.picture {
+    border-radius: 0.8rem;
+    margin-bottom: 1.5rem;
+    position: relative
+}
+.picture div {
+    position:absolute;
+    background-color: var(--clr-Cyan);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.picture div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.picture div:hover {
+    opacity: 70%;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+p {
+    opacity: 50%;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+}
+.daysLeft {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+h2 {
+    color: var(--clr-Cyan)
+}
+h2, h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+h3 {
+    opacity: 50%;
+}
+.daysLeft img {
+    height: 20px;
+}
+.creator {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+.creator img {
+  
+    height: 50px;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+}
+h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+   
+}
+.opacity {
+    opacity: 50%;
+}
+.hover:hover { 
+    color: var(--clr-Cyan);
+    cursor: pointer;
+}
+
